@@ -10,5 +10,7 @@ namespace GOTQuotes
     {
         public string character { get; set; }
         public string quote { get; set; }
+
+    
     }
 }

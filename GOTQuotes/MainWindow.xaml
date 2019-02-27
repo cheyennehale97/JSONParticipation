@@ -14,6 +14,6 @@
         <Grid.Background>
             <ImageBrush ImageSource="https://cdn.hipwallpaper.com/i/73/74/zri6Qg.jpg" Stretch="UniformToFill"></ImageBrush>
         </Grid.Background>
-        <TextBlock x:Name="quote" HorizontalAlignment="Right" Margin="0,0,604,237" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Bottom" Height="154" Width="161" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="quote" HorizontalAlignment="Right" Margin="0,0,604,237" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="154" Width="161" Grid.ColumnSpan="2" Foreground="#FFFDFAFA"/>
     </Grid>
 </Window>

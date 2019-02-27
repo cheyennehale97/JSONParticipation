@@ -31,8 +31,7 @@ namespace GOTQuotes
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-
-
+                    
             using (HttpClient client = new HttpClient())
             {
                 var response = client.GetAsync(@"https://got-quotes.herokuapp.com/quotes").Result;
@@ -40,9 +39,9 @@ namespace GOTQuotes
                 {
                     var content = response.Content.ReadAsStringAsync().Result;
                     HerokuQuote q = JsonConvert.DeserializeObject<HerokuQuote>(content);
-                    quote.Inlines.Add(new Italic());
+                    quote.Inlines.Add(new Italic((new Run(q.quote))));
                     quote.Inlines.Add("-");
-                    quote.Inlines.Add(new Bold());
+                    quote.Inlines.Add(new Bold((new Run(q.character))));
                     
                     
 
